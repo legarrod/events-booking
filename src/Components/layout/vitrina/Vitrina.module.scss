@@ -1,0 +1,28 @@
+.vitrina{
+    &__card{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        padding: 20px;
+       
+    }
+    &__imagen{
+        border-radius: 8px;
+    }
+    &__product__carousel{
+        padding: 20px;
+        width: 100%;
+    }
+    &__card__title{
+        font-weight: 700;
+        font-size: 1.2rem;
+    }
+    &__card__descripcion{
+        font-size: 1rem;
+        color: #717171;
+    }
+    &__card__capacidad{
+        font-size: 1rem;
+    }
+}
