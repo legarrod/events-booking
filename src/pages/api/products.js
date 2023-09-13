@@ -11,7 +11,8 @@ const products = [
       slug: 'product-1',
       adicionales: ['adicional 1', 'adicional 2', 'adicional 3', 'adicional 4', 'adicional 5', 'adicional 6'],
       ciudad: 'Bogotá',
-      direccion: 'calle falsa 123'
+      direccion: 'calle falsa 123',
+      contacto: '3218158767',
     },
     {
       name: 'Product 2',
@@ -21,7 +22,8 @@ const products = [
       slug: 'product-2',
       adicionales: ['adicional 1', 'adicional 2', 'adicional 3', 'adicional 4', 'adicional 5', 'adicional 6'],
       ciudad: 'Bogotá',
-      direccion: 'calle falsa 123'
+      direccion: 'calle falsa 123',
+      contacto: '3218158767',
     },
     {
         name: 'Product 3',
@@ -31,7 +33,8 @@ const products = [
         slug: 'product-3',
         adicionales: ['adicional 1', 'adicional 2', 'adicional 3', 'adicional 4', 'adicional 5', 'adicional 6'],
         ciudad: 'Bogotá',
-      direccion: 'calle falsa 123'
+      direccion: 'calle falsa 123',
+      contacto: '3218158767',
       },
       {
         name: 'Product 4',
@@ -41,7 +44,8 @@ const products = [
         slug: 'product-4',
         adicionales: ['adicional 1', 'adicional 2', 'adicional 3', 'adicional 4', 'adicional 5', 'adicional 6'],
         ciudad: 'Bogotá',
-      direccion: 'calle falsa 123'
+      direccion: 'calle falsa 123',
+      contacto: '3218158767',
       },
       {
         name: 'Product 5',
@@ -51,7 +55,8 @@ const products = [
         slug: 'product-5',
         adicionales: ['adicional 1', 'adicional 2', 'adicional 3', 'adicional 4', 'adicional 5', 'adicional 6'],
         ciudad: 'Bogotá',
-      direccion: 'calle falsa 123'
+      direccion: 'calle falsa 123',
+      contacto: '3218158767',
       },
   ];
   

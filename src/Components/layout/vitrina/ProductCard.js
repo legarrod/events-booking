@@ -30,6 +30,7 @@ export default function  ProductCard  ({product}){
                     <h3 className={styles.vitrina__card__title}>{product.name}</h3>
                     <p className={styles.vitrina__card__descripcion}>{product.descripcion}</p>
                     <span className={styles.vitrina__card__capacidad}>Capacidad:{product.capacidad}</span>
+                    <p className={styles.vitrina__card__descripcion}>{product.ciudad}</p>
                 </div>
             </div>
         </Link>

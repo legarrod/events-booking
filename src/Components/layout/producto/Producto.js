@@ -2,8 +2,12 @@ import React from 'react';
 import styles from './producto.module.scss'
 import Slider from 'react-slick';
 import vineta from '../../../img/icons/calendar.png'
+import { useRouter } from 'next/router';
 
 export default function  Producto  (props){
+    const router = useRouter();
+    const currentURL = typeof window !== 'undefined' ? window.location.href : '';
+    const message = `Hola! deseo información para reservar ${currentURL}`;
     const {product} = props
     console.log(product)
     const settings = {
@@ -16,6 +20,11 @@ export default function  Producto  (props){
         autoplay: true,
         autoplaySpeed: 10000  
       };
+      
+        const handleClick = () => {
+            const whatsappURL = `https://api.whatsapp.com/send?phone=${product.contacto}&text=${encodeURIComponent(message)}`;
+            window.open(whatsappURL, '_blank');
+        };
       
     return(
        <div>
@@ -54,7 +63,7 @@ export default function  Producto  (props){
                     ))}
                     </ul>
             </div>
-                <a href="#" className={styles.product__busqueda_boton}>Reservar</a>
+                <a onClick={handleClick} className={styles.product__busqueda_boton}>Reservar</a>
         </div>
 
         <div>
