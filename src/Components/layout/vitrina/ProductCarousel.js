@@ -10,10 +10,18 @@ import imagen3 from '../../../img/salones/events-1455715_1280.jpg'
 import imagen4 from '../../../img/salones/events-986055_1280.jpg'
 import imagen5 from '../../../img/salones/interiors-5581925_1280.jpg'
 import imagen6 from '../../../img/salones/concert-2119610_1280.jpg'
+import productsData from '../../../pages/api/products';
 
 export function  ProductCarousel  () {
   // Estado para mantener el número de elementos a mostrar
   const [slidesToShow, setSlidesToShow] = useState(4);
+
+  const [products, setProducts] = useState([]);
+
+ console.log(products, '++++++++++++++++');
+  useEffect(() => {
+    setProducts(productsData);
+  }, []);
 
   // Función para calcular el número de elementos a mostrar
   const calculateSlidesToShow = () => {
@@ -44,38 +52,6 @@ export function  ProductCarousel  () {
     //arrows: true  ,
     autoplaySpeed: 10000
   };
-  const products = [
-    {
-      name: 'Product 1',
-      images: [imagen1, imagen2, imagen3],
-      descripcion: "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias",
-      capacidad: "50 personas"
-    },
-    {
-      name: 'Product 2',
-      images: [imagen1, imagen2, imagen3],
-      descripcion: "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias",
-      capacidad: "100 personas"
-    },
-    {
-        name: 'Product 3',
-        images: [imagen1, imagen2, imagen3],
-        descripcion: "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias",
-        capacidad: "80 personas"
-      },
-      {
-        name: 'Product 4',
-        images: [imagen1, imagen2, imagen3],
-        descripcion: "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias",
-        capacidad: "30 personas"
-      },
-      {
-        name: 'Product 5',
-        images: [imagen1, imagen2, imagen3],
-        descripcion: "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias",
-        capacidad: "10 personas"
-      },
-  ];
 
   return (
     <div className={styles.vitrina__product__carousel}>

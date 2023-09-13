@@ -11,7 +11,6 @@ export function BasicLayout(props) {
     return(
         <>
         <Header/>
-        <ProductCarousel/>
         {children}
         <Footer/>
         </>
